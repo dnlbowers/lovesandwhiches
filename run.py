@@ -31,10 +31,11 @@ def get_sales_data():
         # Splits the input by the comma
         sales_data = data_str.split(",")
         validate_data(sales_data)
-        
+
         if validate_data(sales_data):
             print("data is valid")
             break
+    return sales_data
 
 
 def validate_data(values):
@@ -55,4 +56,4 @@ def validate_data(values):
     return True
 
 
-get_sales_data()
+data = get_sales_data()
